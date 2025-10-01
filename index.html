@@ -1,79 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Balaji Engineering Works - French Doors & French Windows in Pune. Best quality, stylish designs, and professional installation.">
-    <meta name="keywords" content="French Doors in Pune, French Windows in Pune, Balaji Engineering Works, Stylish Doors, Best French Doors">
+    <meta name="description"
+        content="Balaji Engineering Works - French Doors & French Windows in Pune. Best quality, stylish designs, and professional installation.">
+    <meta name="keywords"
+        content="French Doors in Pune, French Windows in Pune, Balaji Engineering Works, Stylish Doors, Best French Doors">
     <meta name="author" content="Balaji Engineering Works">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>French Doors & Windows Pune | Balaji Engineering Works</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; }
-        header { background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') no-repeat center center/cover; color: white; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 3em; margin: 0; }
-        header p { font-size: 1.2em; }
-        nav { background: #333; padding: 10px; text-align: center; }
-        nav a { color: white; text-decoration: none; padding: 10px 15px; display: inline-block; }
-        nav a:hover { background: #555; }
-        section { padding: 20px; max-width: 1200px; margin: auto; }
-        .products { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-        .product { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 300px; text-align: center; }
-        .product img { width: 100%; border-radius: 8px; }
-        .call-buttons { text-align: center; margin: 20px 0; }
-        .call-buttons a { background: #28a745; color: white; padding: 15px 20px; text-decoration: none; font-size: 1.2em; border-radius: 5px; margin: 10px; display: inline-block; }
-        .call-buttons a:hover { background: #218838; }
-        footer { background: #333; color: white; text-align: center; padding: 15px 10px; margin-top: 20px; }
-        iframe { width: 100%; height: 300px; border: none; margin-top: 20px; }
-    </style>
 </head>
+
 <body>
-
-<header>
-    <h1>Balaji Engineering Works</h1>
-    <p>Premium French Doors & French Windows in Pune</p>
-</header>
-
-<nav>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-    <a href="#location">Location</a>
-</nav>
-
-<section id="products">
-    <h2>Our Products</h2>
-    <div class="products">
-        <div class="product">
-            <img src="frenchDoor.jpeg" alt="French Door">
-            <h3>Elegant French Doors</h3>
-            <p>High-quality French doors designed to enhance the beauty of your home.</p>
+    <nav>
+        <div class="logo-container">
+            <img src="Logo.jpg" alt="Balaji Engineering Works Logo" class="nav-logo">
         </div>
-        <div class="product">
-            <img src="frenchWindow1.jpeg" alt="French Window">
-            <h3>Stylish French Windows</h3>
-            <p>Beautifully crafted French windows for better ventilation and style.</p>
+        <a href="javascript:void(0);" class="burger-icon" onclick="openBurger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="links">
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#location" class="nav-link">Location</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
         </div>
-    </div>
-</section>
+    </nav>
 
-<section class="call-buttons">
-    <a href="tel:+919373774203">📞 Call 9373774203</a>
-    <a href="tel:+919011030618">📞 Call 9011030618</a>
-</section>
+    <header>
+        <h1>Balaji Engineering Works</h1>
+        <p>Premium French Doors & French Windows in Pune</p>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Address: Balaji Engineering Works, Tathawade, Pune, Maharashtra</p>
-    <p>📞 Phone: 9373774203 / 9011030618</p>
-</section>
+        <a href="https://wa.me/9373774203" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </header>
 
-<section id="location">
-    <h2>Our Location</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.93275368675!2d73.74651677540874!3d18.622094166064848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9489fa0e0bf%3A0x3b5897ec601710a!2sBalaji%20engineering%20works%20%E2%80%93%20French%20Doors%20%26%20Windows%20in%20Pune!5e0!3m2!1sen!2sin!4v1754846493330!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="frenchDoor.jpeg" alt="Elegant French Door">
+                <h3>Elegant French Doors</h3>
+                <p>High-quality French doors designed to enhance the beauty of your home with timeless elegance.</p>
+            </div>
+            <div class="product">
+                <img src="frenchWindow1.jpeg" alt="Stylish French Window">
+                <h3>Stylish French Windows</h3>
+                <p>Beautifully crafted French windows for better ventilation, natural light, and sophisticated
+                    style.</p>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2025 Balaji Engineering Works | French Doors & Windows Pune</p>
-</footer>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Address: Balaji Engineering Works, Tathawade, Pune, Maharashtra</p>
+        <!-- <p>
+            📞 Phone:
+            <a href="tel:+919373774203">9373774203</a> /
+            <a href="tel:+919011030618">9011030618</a>
+        </p> -->
+        <div class="call-buttons">
+            <a href="tel:+919373774203">
+                <i class="fa fa-phone"></i> 9373774203
+            </a>
+            <a href="tel:+919011030618">
+                <i class="fa fa-phone"></i> 9011030618
+            </a>
+        </div>
+    </section>
+
+    <section id="location">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.93275368675!2d73.74651677540874!3d18.622094166064848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9489fa0e0bf%3A0x3b5897ec601710a!2sBalaji%20engineering%20works%20%E2%80%93%20French%20Doors%20%26%20Windows%20in%20Pune!5e0!3m2!1sen!2sin!4v1754846493330!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="door1.jpg" alt="French Door Installation 1">
+            <img src="door2.jpg" alt="French Door Installation 2">
+            <img src="door3.jpg" alt="French Door Installation 3">
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="goTopBtn" title="Go to top">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Balaji Engineering Works | French Doors & Windows Pune</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

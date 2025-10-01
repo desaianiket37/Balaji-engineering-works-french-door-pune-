@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') no-repeat center center/cover;
+    /* color: indianred; */
+    padding: 150px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    color: indianred;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: sienna;
+}
+
+header .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 28px;
+    padding: 12px 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+header .whatsapp-button:hover {
+    background-color: #1ebe5b;
+}
+
+nav {
+    background: white;
+    /* padding-top: 10px; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 35px;
+    /* display: inline-block; */
+}
+
+nav a.burger-icon {
+    display: none;
+}
+
+.nav-logo {
+    height: 60px;
+    /* width: auto; */
+}
+
+nav div a:hover {
+    background: #e6f2ff;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gallery img {
+    border: 1px solid black;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.call-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call-buttons a {
+    background: #28a745;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.call-buttons a:hover {
+    background: #218838;
+}
+
+#goTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    /* transition: all 0.3s ease-in-out; */
+    display: none;
+}
+
+#goTopBtn:hover {
+    background-color: #0077cc;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: 60px;
+    }
+
+    .logo-container {
+        /* z-index: 10; */
+    }
+
+    nav a.burger-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        /* z-index: 11; */
+        color: black;
+    }
+
+    #links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+        /* z-index: 9; */
+    }
+
+    #links.open {
+        display: flex;
+        width: 100%;
+    }
+
+    #links a.nav-link {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-logo {
+        height: 50px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .gallery img {
+        border: 1px solid black;
+    }
+
+    #goTopBtn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        padding: 12px 16px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+        display: none;
+    }
+
+    #goTopBtn:hover {
+        background-color: #0077cc;
+    }
+
+}
